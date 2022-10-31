@@ -1,0 +1,4 @@
+<template>
+  asfasfa
+  <!-- <Hero /> -->
+</template>

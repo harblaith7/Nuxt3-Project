@@ -1,0 +1,137 @@
+<template>
+  <div>
+    <!-- NAVBAR START-->
+    <header
+      class="sticky top-0 z-50 flex justify-between items-center space-x-1 border-b bg-white p-4 shadow-md md:px-6"
+    >
+      <a href="/" class="text-3xl font-mono"> carenter </a>
+    </header>
+    <!-- NAVBAR END-->
+
+    <!-- HEADER START-->
+    <div
+      class="relative h-[250px] sm:h-[550px] 2xl:h-[1000px] w-100 bg-[url('https://carconfigurator.ferrari.com/assets/cars/portofinom/packages/default/car-ferrari-portofino-m_splash.jpg')] bg-no-repeat bg-cover bg-bottom"
+    >
+      <div class="z-10 absolute w-full h-full flex justify-center items-center">
+        <div class="text-center w-1/3">
+          <h1 class="text-white text-8xl font-serif mb-10">Find your drive</h1>
+
+          <!-- SEARCH START -->
+          <div
+            class="font-serif w-full text-2xl rounded-full bg-white flex justify-between overflow-hidden"
+          >
+            <input
+              class="py-3 px-5 w-full text-2xl rounded-full w-1/3 focus:outline-none"
+              type="text"
+              placeholder="Search by city..."
+            />
+            <input
+              type="text"
+              placeholder="Start Date"
+              onfocus="(this.type = 'date')"
+              onfocusout="(this.type = 'text')"
+              class="focus:outline-none w-1/4"
+            />
+            <input
+              type="text"
+              placeholder="End Date"
+              onfocus="(this.type = 'date')"
+              onfocusout="(this.type = 'text')"
+              class="focus:outline-none w-1/4"
+            />
+            <button class="bg-sky-500 mr-auto px-9 text-white">Search</button>
+          </div>
+          <!-- SEARCH END -->
+        </div>
+      </div>
+      <div class="absolute w-full h-full bg-black opacity-50 z-1"></div>
+    </div>
+    <!-- HEADER END-->
+
+    <!-- POPULAR CITIES START -->
+    <main
+      class="mx-auto mt-4 max-w-7xl space-y-4 px-4 xs:px-8 sm:px-10 lg:px-16 pb-16 w-3/5"
+    >
+      <section>
+        <h2 class="py-5 text-3xl font-semibold md:text-5xl mb-9">
+          Popular Cars
+        </h2>
+        <div class="flex justify-between flex-wrap">
+          <div class="w-[31%] mb-5 shadow rounded overflow-hidden">
+            <img
+              src="https://upload.wikimedia.org/wikipedia/commons/b/b9/2018_Jeep_Wrangler_Sahara_Unlimited_Multijet_2.1_Front.jpg"
+              alt=""
+              class="h-48 w-full"
+            />
+            <h4 class="uppercase font-bold text-2xl p-2">Jeep</h4>
+          </div>
+          <div class="w-[31%] mb-5 shadow rounded overflow-hidden">
+            <img
+              src="https://tesla-cdn.thron.com/delivery/public/image/tesla/3863f3e5-546a-4b22-bcbc-1f8ee0479744/bvlatuR/std/1200x628/MX-Social"
+              alt=""
+              class="h-48"
+            />
+            <h4 class="uppercase p-2 font-bold text-2xl">Tesla</h4>
+          </div>
+          <div class="w-[31%] mb-5 shadow rounded overflow-hidden">
+            <img
+              src="https://www.topgear.com/sites/default/files/cars-car/carousel/2021/03/rr_velar_21my_p400e_phev_driving_001_0.jpg"
+              alt=""
+              class="h-48"
+            />
+            <h4 class="uppercase font-bold text-2xl p-2">Land Rover</h4>
+          </div>
+          <div class="w-[31%] mb-5 shadow rounded overflow-hidden">
+            <img
+              src="https://upload.wikimedia.org/wikipedia/commons/b/b9/2018_Jeep_Wrangler_Sahara_Unlimited_Multijet_2.1_Front.jpg"
+              alt=""
+              class="h-48 w-full"
+            />
+            <h4 class="uppercase font-bold text-2xl p-2">Jeep</h4>
+          </div>
+          <div class="w-[31%] mb-5 shadow rounded overflow-hidden">
+            <img
+              src="https://tesla-cdn.thron.com/delivery/public/image/tesla/3863f3e5-546a-4b22-bcbc-1f8ee0479744/bvlatuR/std/1200x628/MX-Social"
+              alt=""
+              class="h-48"
+            />
+            <h4 class="uppercase p-2 font-bold text-2xl">Tesla</h4>
+          </div>
+          <div class="w-[31%] mb-5 shadow rounded overflow-hidden">
+            <img
+              src="https://www.topgear.com/sites/default/files/cars-car/carousel/2021/03/rr_velar_21my_p400e_phev_driving_001_0.jpg"
+              alt=""
+              class="h-48"
+            />
+            <h4 class="uppercase font-bold text-2xl p-2">Land Rover</h4>
+          </div>
+          <div class="w-[31%] mb-5 shadow rounded overflow-hidden">
+            <img
+              src="https://upload.wikimedia.org/wikipedia/commons/b/b9/2018_Jeep_Wrangler_Sahara_Unlimited_Multijet_2.1_Front.jpg"
+              alt=""
+              class="h-48 w-full"
+            />
+            <h4 class="uppercase font-bold text-2xl p-2">Jeep</h4>
+          </div>
+          <div class="w-[31%] mb-5 shadow rounded overflow-hidden">
+            <img
+              src="https://tesla-cdn.thron.com/delivery/public/image/tesla/3863f3e5-546a-4b22-bcbc-1f8ee0479744/bvlatuR/std/1200x628/MX-Social"
+              alt=""
+              class="h-48"
+            />
+            <h4 class="uppercase p-2 font-bold text-2xl">Tesla</h4>
+          </div>
+          <div class="w-[31%] mb-5 shadow rounded overflow-hidden">
+            <img
+              src="https://www.topgear.com/sites/default/files/cars-car/carousel/2021/03/rr_velar_21my_p400e_phev_driving_001_0.jpg"
+              alt=""
+              class="h-48"
+            />
+            <h4 class="uppercase font-bold text-2xl p-2">Land Rover</h4>
+          </div>
+        </div>
+      </section>
+    </main>
+    <!-- POPULAR CITIES END -->
+  </div>
+</template>
