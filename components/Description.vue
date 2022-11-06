@@ -1,23 +1,18 @@
+<script setup>
+const route = useRoute()
+</script>
+
+
 <template>
-  <div class="mr-10">
-    <h1 class="text-lg font-bold">Description</h1>
-    <p>
-      Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo, reiciendis
-      sint. Ipsum possimus perferendis placeat. Impedit laborum unde incidunt
-      veniam? Natus iusto facilis quibusdam suscipit, totam exercitationem
-      repellendus saepe, magnam eaque, eos quasi dolores nobis. Voluptates
-      dolorem deleniti velit asperiores? Lorem ipsum dolor sit amet consectetur
-      adipisicing elit. Amet fugit voluptatum voluptatem laboriosam omnis itaque
-      sit delectus eveniet dignissimos inventore error, et quaerat eaque
-      voluptas hic excepturi recusandae eligendi rerum? Lorem ipsum dolor sit
-      amet consectetur adipisicing elit. Nemo, reiciendis sint. Ipsum possimus
-      perferendis placeat. Impedit laborum unde incidunt veniam? Natus iusto
-      facilis quibusdam suscipit, totam exercitationem repellendus saepe, magnam
-      eaque, eos quasi dolores nobis. Voluptates dolorem deleniti velit
-      asperiores? Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet
-      fugit voluptatum voluptatem laboriosam omnis itaque sit delectus eveniet
-      dignissimos inventore error, et quaerat eaque voluptas hic excepturi
-      recusandae eligendi rerum?
+  <div class="mt-5">
+    <p class="mb-10">
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis odio et
+      laboriosam! Numquam ut rem, blanditiis est rerum tenetur maxime delectus
+      magni voluptatem natus, minus doloremque ducimus, repellat sed
+      perferendis. Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum
+      laboriosam perspiciatis laborum excepturi sit dolor vel quia illum animi
+      ea tempora nisi quod necessitatibus et eveniet quam atque, repellendus ut?
     </p>
+    <NuxtLink :to="`${route.path}/contact`" class="bg-blue-400 text-white px-10 py-3 rounded">Contact</NuxtLink>
   </div>
 </template>

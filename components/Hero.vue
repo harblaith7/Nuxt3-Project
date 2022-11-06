@@ -9,9 +9,7 @@ const car = route.params.carSlug as string | undefined;
   <div
     class="
       relative
-      h-[250px]
-      sm:h-[550px]
-      2xl:h-[1000px]
+      h-screen
       w-100
       bg-no-repeat bg-cover bg-bottom
     "
@@ -22,7 +20,7 @@ const car = route.params.carSlug as string | undefined;
     "
   >
     <div class="z-10 absolute w-full h-full flex justify-center items-center">
-      <div class="text-center w-1/3">
+      <div class="text-center w-1/2">
         <h1
           class="text-8xl font-serif mb-10"
           :class="isHomepage ? 'text-white' : 'text-black'"

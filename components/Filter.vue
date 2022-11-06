@@ -9,10 +9,8 @@ const make = ref("any");
       <input type="text" class="h-full focus:outline-none px-3 font-normal" />
     </div>
     <input
-      type="text"
-      placeholder="Start Date"
-      onfocus="(this.type = 'date')"
-      onfocusout="(this.type = 'text')"
+      type="number"
+      placeholder="Min Price"
       class="
         focus:outline-none
         border
@@ -23,12 +21,9 @@ const make = ref("any");
         w-48
       "
     />
-    <p class="mr-4">to</p>
     <input
-      type="text"
-      placeholder="End Date"
-      onfocus="(this.type = 'date')"
-      onfocusout="(this.type = 'text')"
+      type="number"
+      placeholder="Max Price"
       class="
         focus:outline-none
         border

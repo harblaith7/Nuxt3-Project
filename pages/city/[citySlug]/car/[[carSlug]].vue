@@ -4,25 +4,25 @@ const cars = [
   {
     id: 1,
     name: "Range Rover Sport",
-    price: 253,
+    price: "84,777",
     url: "https://www.carhelpcanada.com/wp-content/uploads/2019/12/2020-Range-Rover-Evoque-2.jpg",
   },
   {
     id: 2,
     name: "Rolls Royce Ghost",
-    price: 1320,
+    price: "455,000",
     url: "https://robbreport.com/wp-content/uploads/2021/03/1-5.jpg?w=1000",
   },
   {
     id: 3,
     name: "Mercedes-Benz G-Class",
-    price: 755,
+    price: "255,000",
     url: "https://media.ed.edmunds-media.com/mercedes-benz/g-class/2021/oem/2021_mercedes-benz_g-class_4dr-suv_amg-g-63_fq_oem_1_1280.jpg",
   },
   {
     id: 4,
     name: "Porsche Taycan",
-    price: 55,
+    price: "180,434",
     url: "https://www.topgear.com/sites/default/files/cars-car/carousel/2021/02/pcgb20_1441_fine.jpg",
   },
 ];

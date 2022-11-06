@@ -7,12 +7,15 @@
       alt=""
     />
     <h1 class="mt-10 text-4xl">Mercedes Benz G-Wagon</h1>
-    <div class="text-slate-500 flex text-lg mt-3 border-b pb-5">
-      <p class="mr-2">7 seats</p>
-      <p class="mr-2">|</p>
-      <p class="mr-2">49 trips</p>
-      <p class="mr-2">|</p>
-      <p class="mr-2">15,534 miles</p>
+    <div class="text-slate-500 flex text-lg mt-3 border-b pb-5 justify-between">
+      <div class="flex">
+        <p class="mr-2">7 seats</p>
+        <p class="mr-2">|</p>
+        <p class="mr-2">15,534 miles</p>
+      </div>
+      <div>
+        <p class="font-bold text-3xl">$255,000</p>
+      </div>
     </div>
   </div>
 </template>

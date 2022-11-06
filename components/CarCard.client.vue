@@ -32,11 +32,11 @@ const handleFavor = () => {
       @click="handleFavor"
     />
     <div @click="router.push(`/car-${4}`)">
-      <img :src="props.car.url" alt="" class="h-[30rem] w-full" />
+      <img :src="props.car.url" alt="" class="h-[23rem] w-full" />
       <div class="p-2">
         <h2 class="text-3xl mb-5 border-b pb-5">{{ props.car.name }}</h2>
 
-        <p class="text-right">${{ props.car.price }}/day</p>
+        <p class="text-right font-bold text-xl">${{ props.car.price }}</p>
       </div>
     </div>
   </div>
