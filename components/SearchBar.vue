@@ -1,9 +1,9 @@
 <script setup lang="ts">
 import {} from "#app";
 
-const city = ref("");
+const city = useState("citySearch", () => "");
 
-const showCityError = ref(false);
+const showCityError = useState("citySearchError", () => false);
 
 const router = useRouter();
 const props = defineProps<{

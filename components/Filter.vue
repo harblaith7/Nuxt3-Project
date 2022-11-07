@@ -1,5 +1,5 @@
 <script setup lang="ts">
-const make = ref("any");
+const make = useState("makeFilter", () => "any");
 </script>
 
 <template>
