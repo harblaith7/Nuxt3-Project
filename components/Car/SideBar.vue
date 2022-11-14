@@ -22,6 +22,9 @@ const onChangeMake = (make) => {
 
 const onChangeLocation = () => {
   updateShowModal("location");
+  if (!isNaN(parseInt(city.value))) {
+    throw createError("Invalid city format");
+  }
   navigateTo(`/city/${city.value}/car/${route.params.make}`);
   city.value = "";
 };
