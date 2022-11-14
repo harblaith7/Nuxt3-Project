@@ -3,7 +3,14 @@ const route = useRoute();
 const { cars } = useCar();
 
 const car = cars.find((c) => {
-  return c.id === parseInt(route.params.id as string);
+  let carFound = c.id === parseInt(route.params.id as string);
+  if (!carFound) {
+    throw createError({
+      statusCode: 404,
+      message: "Car not found",
+    });
+  }
+  return carFound;
 });
 
 definePageMeta({
