@@ -7,12 +7,7 @@ const car = route.params.carSlug as string | undefined;
 
 <template>
   <div
-    class="
-      relative
-      h-screen
-      w-100
-      bg-no-repeat bg-cover bg-bottom
-    "
+    class="relative h-screen w-100 bg-no-repeat bg-cover bg-bottom"
     :class="
       isHomepage
         ? `bg-[url('https://carconfigurator.ferrari.com/assets/cars/portofinom/packages/default/car-ferrari-portofino-m_splash.jpg')]`
@@ -28,7 +23,7 @@ const car = route.params.carSlug as string | undefined;
           Find your <span v-if="isHomepage">drive</span>
           <span v-else class="capitalize">{{ route.params.carSlug }}</span>
         </h1>
-        <SearchBar :car="car" />
+        <HomeSearchBar />
       </div>
     </div>
     <div

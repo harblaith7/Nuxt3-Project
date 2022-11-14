@@ -5,10 +5,8 @@ definePageMeta({
 </script>
 
 <template>
-  <div>
-    <CarHero />
-    <Attributes />
-    <Description />
+  <div class="mt-32 flex">
+    <CarSideBar />
     <NuxtPage />
   </div>
 </template>

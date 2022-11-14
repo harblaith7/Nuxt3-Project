@@ -15,6 +15,6 @@
       md:px-6
     "
   >
-    <NuxtLink to="/" class="text-3xl font-mono"> carenter </NuxtLink>
+    <NuxtLink to="/" class="text-3xl font-mono"> cartrader </NuxtLink>
   </header>
 </template>

@@ -1,0 +1,42 @@
+[
+    {
+      "id": 1,
+      "name": "Range Rover Sport",
+      "price": "84,777",
+      "url": "https://www.carhelpcanada.com/wp-content/uploads/2019/12/2020-Range-Rover-Evoque-2.jpg",
+      "seats": 5,
+      "miles": "14,666",
+      "features": ["No Accidents", "Low KM", "Vehicle Detailed", "Leather Interior"],
+      "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis odio et laboriosam!"
+    },
+    {
+      "id": 2,
+      "name": "Rolls Royce Ghost",
+      "price": "455,000",
+      "url": "https://robbreport.com/wp-content/uploads/2021/03/1-5.jpg?w=1000",
+      "seats": 5,
+      "miles": "53,666",
+      "features": ["No Accidents", "Low KM", "Vehicle Detailed", "Leather Interior"],
+      "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis odio et laboriosam! Numquam ut rem, blanditiis est rerum tenetur maxime delectus"
+    },
+    {
+      "id": 3,
+      "name": "Mercedes-Benz G-Class",
+      "price": "255,000",
+      "url": "https://media.ed.edmunds-media.com/mercedes-benz/g-class/2021/oem/2021_mercedes-benz_g-class_4dr-suv_amg-g-63_fq_oem_1_1280.jpg",
+      "seats": 7,
+      "miles": "4577",
+      "features": ["No Accidents", "Low KM", "Vehicle Detailed", "Leather Interior"],
+      "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis odio et laboriosam! Numquam ut rem,"
+    },
+    {
+      "id": 4,
+      "name": "Porsche Taycan",
+      "price": "180,434",
+      "url": "https://www.topgear.com/sites/default/files/cars-car/carousel/2021/02/pcgb20_1441_fine.jpg",
+      "seats": 5,
+      "miles": "0",
+      "features": ["No Accidents", "Low KM", "Vehicle Detailed", "Leather Interior"],
+      "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis odio et"
+    }
+  ]
