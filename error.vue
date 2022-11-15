@@ -15,7 +15,7 @@ const handleError = () => {
 <template>
   <div>
     <NuxtLayout>
-      <div class="text-center mx-auto mt-32">
+      <div v-if="error" class="text-center mx-auto mt-32">
         <h1 class="text-9xl text-red-600">{{ error.statusCode }}</h1>
         <p class="mt-7 text-4xl">{{ error.message }}</p>
         <button

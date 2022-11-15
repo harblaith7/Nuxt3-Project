@@ -1,17 +1,22 @@
 <script setup lang="ts">
+import {} from "#app";
 const route = useRoute();
 const { cars } = useCar();
 
-const car = cars.find((c) => {
-  let carFound = c.id === parseInt(route.params.id as string);
-  if (!carFound) {
-    throw createError({
-      statusCode: 404,
-      message: "Car not found",
-    });
-  }
-  return carFound;
+const car = computed(() => {
+  console.log(cars);
+  return cars.find((c) => {
+    return c.id === parseInt(route.params.id as string);
+  });
 });
+
+if (!car.value) {
+  console.log(car.value);
+  throw createError({
+    statusCode: 404,
+    message: "Car not found",
+  });
+}
 
 definePageMeta({
   layout: "custom",

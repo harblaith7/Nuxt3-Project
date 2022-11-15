@@ -20,16 +20,6 @@
       "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis odio et laboriosam! Numquam ut rem, blanditiis est rerum tenetur maxime delectus"
     },
     {
-      "id": 3,
-      "name": "Mercedes-Benz G-Class",
-      "price": "255,000",
-      "url": "https://media.ed.edmunds-media.com/mercedes-benz/g-class/2021/oem/2021_mercedes-benz_g-class_4dr-suv_amg-g-63_fq_oem_1_1280.jpg",
-      "seats": 7,
-      "miles": "4577",
-      "features": ["No Accidents", "Low KM", "Vehicle Detailed", "Leather Interior"],
-      "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis odio et laboriosam! Numquam ut rem,"
-    },
-    {
       "id": 4,
       "name": "Porsche Taycan",
       "price": "180,434",
