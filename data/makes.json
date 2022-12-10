@@ -1,7 +1,4 @@
-import cars from "@/cars.json"
-
-export const useCar = () => {
-  const makes = [
+[
     "Acura",
     "Alfa Romeo",
     "Aston Martin",
@@ -54,10 +51,4 @@ export const useCar = () => {
     "Triumph",
     "Volkswagen",
     "Volvo"
-    ]
-
-    return {makes, cars}
-};
-
-
-
+]

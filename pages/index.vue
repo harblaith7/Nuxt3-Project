@@ -6,6 +6,7 @@ useHead({
 
 <template>
   <div>
-    <HomeHero />
+    <CarHero />
   </div>
 </template>
+  

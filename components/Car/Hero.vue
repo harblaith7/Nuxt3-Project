@@ -1,30 +1,19 @@
-<script setup lang="ts">
-import {} from "#app";
-
-const props = defineProps<{
-  car: {
-    url: string;
-    name: string;
-    price: string;
-    seats: number;
-    miles: string;
-  };
-}>();
-</script>
-
 <template>
-  <div class="mt-10">
-    <NuxtImg :src="car.url" alt="" class="w-full" />
-    <h1 class="mt-10 text-4xl">{{ car.name }}</h1>
-    <div class="text-slate-500 flex text-lg mt-3 border-b pb-5 justify-between">
-      <div class="flex">
-        <p class="mr-2">{{ car.seats }} seats</p>
-        <p class="mr-2">|</p>
-        <p class="mr-2">{{ car.miles }} miles</p>
-      </div>
-      <div>
-        <p class="font-bold text-3xl">${{ car.price }}</p>
+  <div
+    class="
+      relative
+      h-screen
+      w-100
+      bg-no-repeat bg-cover bg-bottom
+      bg-[url('https://carconfigurator.ferrari.com/assets/cars/portofinom/packages/default/car-ferrari-portofino-m_splash.jpg')]
+    "
+  >
+    <div class="z-10 absolute w-full h-full flex justify-center items-center">
+      <div class="text-center w-1/2">
+        <h1 class="text-8xl font-serif mb-10 text-white">Find your drive</h1>
+        <CarSearchBar />
       </div>
     </div>
+    <div class="z-1 absolute w-full h-full bg-black opacity-50"></div>
   </div>
 </template>

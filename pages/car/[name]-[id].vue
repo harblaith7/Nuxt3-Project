@@ -1,41 +1,39 @@
-<script setup lang="ts">
-import {} from "#app";
+<script setup>
 const route = useRoute();
-const { cars } = useCar();
-
-const car = computed(() => {
-  console.log(cars);
-  return cars.find((c) => {
-    return c.id === parseInt(route.params.id as string);
-  });
+const { cars } = useCars();
+const { toTitleCase } = useUtilities();
+useHead({
+  title: toTitleCase(route.params.name),
 });
 
-if (!car.value) {
-  console.log(car.value);
-  throw createError({
-    statusCode: 404,
-    message: "Car not found",
+definePageMeta({
+  validate({ params }) {
+    const { cars } = useCars();
+    const car = cars.find((c) => c.id === parseInt(params.id));
+    if (!car) {
+      throw createError({
+        statusCode: 404,
+        message: `Car with ID of ${route.params.id} does not exist`,
+      });
+    }
+  },
+});
+
+const car = computed(() => {
+  return cars.find((c) => {
+    return c.id === parseInt(route.params.id);
   });
-}
+});
 
 definePageMeta({
   layout: "custom",
 });
 </script>
-
 <template>
-  <div v-if="car">
-    <CarHero
-      :car="{
-        url: car.url,
-        name: car.name,
-        price: car.price,
-        seats: car.seats,
-        miles: car.miles,
-      }"
-    />
-    <CarAttributes :features="car.features" />
-    <CarDescription :description="car.description" />
-    <CarContact />
+  <div>
+    <CarDetailHero :car="car" />
+    <CarDetailAttributes :features="car.features" />
+    <CarDetailDescription :description="car.description" />
+    <CarDetailContact />
   </div>
 </template>

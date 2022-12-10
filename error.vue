@@ -1,8 +1,4 @@
-<script setup lang="ts">
-definePageMeta({
-  layout: "error",
-});
-
+<script setup>
 const error = useError();
 
 const handleError = () => {
@@ -13,18 +9,14 @@ const handleError = () => {
 </script>
 
 <template>
-  <div>
-    <NuxtLayout>
-      <div v-if="error" class="text-center mx-auto mt-32">
-        <h1 class="text-9xl text-red-600">{{ error.statusCode }}</h1>
-        <p class="mt-7 text-4xl">{{ error.message }}</p>
-        <button
-          @click="handleError"
-          class="rounded mt-7 text-2xl bg-blue-400 px-7 py-4 text-white"
-        >
-          Go Back
-        </button>
-      </div>
-    </NuxtLayout>
+  <div class="flex h-screen justify-center items-center flex-col">
+    <h1 class="text-9xl">{{ error.statusCode }}</h1>
+    <p class="mt-7 text-4xl">{{ error.message }}</p>
+    <button
+      @click="handleError"
+      class="rounded mt-7 text-2xl bg-blue-400 px-7 py-4 text-white"
+    >
+      Go Back
+    </button>
   </div>
 </template>

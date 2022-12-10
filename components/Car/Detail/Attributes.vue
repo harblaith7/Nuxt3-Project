@@ -1,9 +1,7 @@
-<script setup lang="ts">
-import {} from "#app";
-
-const props = defineProps<{
-  features: string[];
-}>();
+<script setup>
+const props = defineProps({
+  features: Array,
+});
 </script>
 
 <template>
