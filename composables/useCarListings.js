@@ -1,9 +1,17 @@
-export default async (filters) => {
-  const { data, error } = await useFetch(`/api/cars`, {
-    query: {
-      ...filters,
-    },
+export default async (city, filters) => {
+  const { data, error, refresh } = await useAsyncData("cars", () => {
+    return $fetch(`/api/cars/${city}`, {
+      params: {
+        ...filters,
+      },
+    });
   });
+
+  //   useFetch(`/api/cars/${city}`, {
+  //     params: {
+  //       ...filters,
+  //     },
+  //   });
 
   if (error.value) {
     throw createError({
@@ -12,5 +20,5 @@ export default async (filters) => {
     });
   }
 
-  return data;
+  return { data, refresh };
 };

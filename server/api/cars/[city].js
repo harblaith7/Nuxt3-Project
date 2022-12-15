@@ -1,8 +1,8 @@
 import cars from "@/data/cars.json";
 
 export default defineEventHandler((event) => {
-  const { city, make, minPrice, maxPrice } = getQuery(event);
-  console.log("called", city, make);
+  const { make, minPrice, maxPrice } = getQuery(event);
+  const { city } = event.context.params;
   let filteredCars = cars;
 
   if (city) {
@@ -16,16 +16,15 @@ export default defineEventHandler((event) => {
       return car.make === make;
     });
   }
-
   if (minPrice) {
     filteredCars = filteredCars.filter((car) => {
-      return car.price >= minPrice;
+      return car.price >= parseInt(minPrice);
     });
   }
 
   if (maxPrice) {
     filteredCars = filteredCars.filter((car) => {
-      return car.price <= minPrice;
+      return car.price <= parseInt(maxPrice);
     });
   }
 
