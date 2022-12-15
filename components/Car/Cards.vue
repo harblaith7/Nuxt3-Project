@@ -1,5 +1,7 @@
 <script setup>
-const { cars } = useCars();
+defineProps({
+  cars: Array,
+});
 
 const favorite = useLocalStorage("favorite", {});
 

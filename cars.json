@@ -3,6 +3,7 @@
       "id": 1,
       "name": "Range Rover Sport",
       "price": "84,777",
+      "city": "Toronto",
       "url": "https://www.carhelpcanada.com/wp-content/uploads/2019/12/2020-Range-Rover-Evoque-2.jpg",
       "seats": 5,
       "miles": "14,666",
@@ -15,6 +16,7 @@
       "price": "455,000",
       "url": "https://robbreport.com/wp-content/uploads/2021/03/1-5.jpg?w=1000",
       "seats": 5,
+      "city": "Miami",
       "miles": "53,666",
       "features": ["No Accidents", "Low KM", "Vehicle Detailed", "Leather Interior"],
       "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis odio et laboriosam! Numquam ut rem, blanditiis est rerum tenetur maxime delectus"
@@ -25,6 +27,7 @@
       "price": "180,434",
       "url": "https://www.topgear.com/sites/default/files/cars-car/carousel/2021/02/pcgb20_1441_fine.jpg",
       "seats": 5,
+      "city": "Toronto",
       "miles": "0",
       "features": ["No Accidents", "Low KM", "Vehicle Detailed", "Leather Interior"],
       "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis odio et"
