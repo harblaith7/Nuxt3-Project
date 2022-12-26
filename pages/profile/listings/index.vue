@@ -1,10 +1,9 @@
 <script setup>
-const { listings } = useCars();
-
 definePageMeta({
   layout: "custom",
-  middleware: "auth",
 });
+
+const { listings } = useCars();
 </script>
 
 <template>
@@ -12,6 +11,7 @@ definePageMeta({
     <div class="flex justify-between mt-24 items-center">
       <h1 class="text-6xl">My Listings</h1>
       <NuxtLink
+        to="/profile/listings/create"
         class="
           w-9
           h-9
@@ -24,7 +24,6 @@ definePageMeta({
           font-bold
           cursor-pointer
         "
-        to="/profile/listings/create"
         >+</NuxtLink
       >
     </div>

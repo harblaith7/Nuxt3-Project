@@ -1,6 +1,4 @@
 <script setup>
-const router = useRouter();
-
 const props = defineProps({
   listing: Object,
 });
@@ -17,11 +15,10 @@ const props = defineProps({
     </div>
     <div class="p-3 flex">
       <NuxtLink
-        class="mr-2 text-blue-400 cursor-pointer"
-        to="/profile/listings/view/3"
+        class="text-blue-400 mr-4"
+        :to="`/profile/listings/view/${listing.id}`"
+        >View</NuxtLink
       >
-        View
-      </NuxtLink>
       <p class="text-red-400 cursor-pointer">Delete</p>
     </div>
   </div>

@@ -6,11 +6,19 @@ const image = useState("carImage", () => {
   };
 });
 
+onMounted(() => {
+  image.value = {
+    preview: null,
+    image: null,
+  };
+});
+
 const emits = defineEmits(["changeInput"]);
 
-const previewImage = (event) => {
+const onImageUpload = (event) => {
   const input = event.target;
   if (input.files) {
+    console.log(input.files);
     const reader = new FileReader();
     reader.onload = (e) => {
       image.value.preview = e.target.result;
@@ -24,18 +32,15 @@ const previewImage = (event) => {
 
 <template>
   <div class="col-md-5 offset-md-1 mt-2 w-[100%]">
-    <label for="description" class="text-cyan-500 mb-1 text-sm mr-9 mb-2"
-      >Image *
-    </label>
+    <label for="" class="text-cyan-500 mb-1 text-sm">Image*</label>
     <form class="mt-2">
       <div class="form-group">
         <div class="relative">
           <input
             type="file"
             accept="image/*"
-            @change="previewImage"
             class="opacity-0 absolute cursor-pointer"
-            id="my-file"
+            @change="onImageUpload"
           />
           <span class="cursor-pointer">Browser File</span>
         </div>
