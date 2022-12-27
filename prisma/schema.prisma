@@ -20,6 +20,9 @@ model Car {
   features      String[]
   description   String
   listerId      String
+  city          String
+  model         String
+  make          String
   messages      Message[]
 }
 

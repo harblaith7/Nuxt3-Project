@@ -14,6 +14,7 @@ export default defineEventHandler(async (event) => {
       image: true,
       id: true,
       name: true,
+      price: true,
     },
   });
 });

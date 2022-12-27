@@ -38,7 +38,6 @@ onMounted(() => {
   };
 });
 const onChangeInput = (data, name) => {
-  console.log({ data });
   info.value[name] = data;
 };
 
@@ -118,7 +117,6 @@ const handleClick = async () => {
 
     navigateTo("/profile/listings");
   } catch (err) {
-    console.log(err);
     errorMessage.value = err.statusMessage;
     await supabase.storage.from("images").remove(data.path);
   }

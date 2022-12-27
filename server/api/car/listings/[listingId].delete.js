@@ -7,7 +7,7 @@ export default defineEventHandler(async (event) => {
 
   return prisma.car.delete({
     where: {
-      id: listingId,
+      id: parseInt(listingId),
     },
   });
 });

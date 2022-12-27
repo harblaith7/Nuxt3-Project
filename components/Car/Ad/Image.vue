@@ -18,7 +18,6 @@ const emits = defineEmits(["changeInput"]);
 const onImageUpload = (event) => {
   const input = event.target;
   if (input.files) {
-    console.log(input.files);
     const reader = new FileReader();
     reader.onload = (e) => {
       image.value.preview = e.target.result;

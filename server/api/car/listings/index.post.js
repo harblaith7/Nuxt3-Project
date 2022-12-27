@@ -1,4 +1,3 @@
-import cars from "@/data/cars.json";
 import Joi from "joi";
 import { PrismaClient } from "@prisma/client";
 import { supabase } from "../../../../supabase";
@@ -36,7 +35,6 @@ export default defineEventHandler(async (event) => {
   const { error, value } = await schema.validate(body);
 
   if (error) {
-    console.log("safasf paul ", error.message);
     throw createError({
       statusCode: 412,
       statusMessage: error.message,
@@ -52,6 +50,9 @@ export default defineEventHandler(async (event) => {
     features,
     description,
     listerId,
+    city,
+    make,
+    model,
   } = body;
 
   const car = await prisma.car.create({
@@ -64,6 +65,9 @@ export default defineEventHandler(async (event) => {
       features,
       description,
       listerId,
+      city: city.toLowerCase(),
+      make,
+      model,
     },
   });
 
